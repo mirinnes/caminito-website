@@ -1,0 +1,28 @@
+.open-icon {
+	padding: 2px 2px 2px 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	border: 2px solid white;
+	border-radius: 50%;
+	height: 24px;
+	transition: all 0.3s ease;
+	&-img {
+		width: 90%;
+		height: 100%;
+		transition: all 0.3s ease;
+		&.expanded {
+			height: 75%;
+			filter: invert(1);
+			transform: rotate(90deg);
+			transition: all 0.3s ease;
+		}
+	}
+	&.expanded {
+		transition: all 0.3s ease;
+		padding: 4px 2px 0px 3px;
+		border: none;
+		background-color: white;
+	}
+}

@@ -1,0 +1,47 @@
+$brown-main: #8a5e3c;
+$white-main: #fff;
+$main-black: #231f20;
+
+.main-footer {
+	position: relative;
+	background-color: #fff;
+	margin-top: 75px;
+	text-align: center;
+	z-index: 1;
+	height: 60px;
+	.main-footer-backUp {
+		position: absolute;
+		text-align: -webkit-center;
+		padding-top: 17px;
+		border-radius: 0 0 15px 15px;
+		box-sizing: border-box;
+		left: 0;
+		bottom: 80px;
+		width: 100vw;
+		height: 70px;
+		max-width: 100%;
+		font-size: 25px;
+		background-color: #8a5e3c;
+		button {
+			background-color: $main-black;
+			border-radius: 50px;
+			border: none;
+			width: 30px;
+			height: 30px;
+			box-sizing: border-box;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			.upArrow {
+				width: 10px;
+			}
+		}
+	}
+	.instaIcon {
+		width: 20px;
+	}
+	.instaIcon,
+	p {
+		margin-bottom: 10px;
+	}
+}

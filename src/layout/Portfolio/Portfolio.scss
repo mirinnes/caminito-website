@@ -1,0 +1,47 @@
+.portfolioContainer {
+	background-color: #231f20;
+	border-radius: 15px;
+	margin: 10px 0px 0px;
+	min-height: 400px;
+	padding: 19.5px 34px;
+	color: white;
+	position: relative;
+	&.not-expanded {
+		max-height: 400px;
+		&-img {
+			width: 90%;
+		}
+	}
+	span {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+		margin-bottom: 10px;
+		p {
+			margin-left: 22px;
+		}
+	}
+	&-img {
+		border-radius: 15px;
+		width: 100%;
+		height: 325px;
+		margin-bottom: 12.6px;
+	}
+	.portfolioContainer-portada {
+		h1,
+		h2 {
+			position: absolute;
+			left: 12%;
+		}
+		h1 {
+			font-size: 25px;
+			bottom: Calc(90% - 75%);
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 20px;
+			font-weight: 400;
+			bottom: Calc(90% - 82%);
+		}
+	}
+}

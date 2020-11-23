@@ -1,0 +1,50 @@
+@keyframes menu-animation {
+	from {
+		left: -800px;
+	}
+	to {
+		left: 0;
+	}
+}
+.dotsMenu-img {
+	height: 25px;
+}
+.menu {
+	&-overlay {
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+		background-color: #58595bcc;
+		position: fixed;
+		display: none;
+		&.isDisplayed {
+			display: block;
+		}
+	}
+	&-container {
+		padding: 30px 25px;
+		z-index: 1;
+		border-radius: 15px;
+		background-color: #231f20;
+		width: 50vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		display: none;
+		&.isDisplayed {
+			display: block;
+			animation-name: menu-animation;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			& .menu-link {
+				display: block;
+				margin: 10px 0;
+				margin-left: 10px;
+				text-decoration: none;
+			}
+		}
+	}
+	&-title {
+		color: white;
+	}
+}

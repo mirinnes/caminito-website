@@ -1,0 +1,10 @@
+.slider-container {
+	width: 70vw;
+	height: 60vh;
+	overflow: hidden;
+	position: relative;
+	border-radius: 15px;
+	.slider-img {
+		width: 100%;
+	}
+}

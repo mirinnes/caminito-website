@@ -1,0 +1,21 @@
+.close-button {
+	background-color: #8a5e3c;
+	width: 65px;
+	height: 35px;
+	padding: 5px 10px;
+	border-radius: 35px;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease;
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #8addad;
+		transition: all 1s ease;
+		padding: 5px 0px 5px 40px;
+	}
+	&-img {
+		width: 9px;
+		transform: scaleY(1.5);
+	}
+}
