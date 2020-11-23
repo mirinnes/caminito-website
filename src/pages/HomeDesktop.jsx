@@ -1,6 +1,8 @@
 import React from "react";
 import { Slider } from "../components/Slider/Slider";
 import { SLIDER_PROYECTS } from "../assets/images/dataImages";
+import FooterDesktop from "../layout/Footer/FooterDesktop";
+
 export function HomeDesktop() {
 	const desktopContainer = {
 		width: "100%",
@@ -19,6 +21,7 @@ export function HomeDesktop() {
 					<span style={{ color: "#8A5E3C" }}>{SLIDER_PROYECTS[0].title}</span>
 				</h3>
 			</section>
+			<FooterDesktop />
 		</>
 	);
 }

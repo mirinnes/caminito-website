@@ -7,7 +7,6 @@ import { HomeDesktop } from "./pages/HomeDesktop";
 import { NavBarDesktop } from "./layout/NavBar/NavBarDesktop";
 import { ProyectDesktop } from "./pages/ProyectDesktop";
 import { PortfolioDesktop } from "./pages/PortfolioDesktop";
-import FooterDesktop from "./layout/Footer/FooterDesktop";
 
 import "./App.css";
 
@@ -44,7 +43,6 @@ function App() {
 									/>
 								</Switch>
 							</div>
-							<FooterDesktop />
 						</>
 					) : (
 						<Switch>
