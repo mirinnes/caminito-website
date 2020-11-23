@@ -13,7 +13,14 @@ export function HomeDesktop() {
 		flexDirection: "column",
 	};
 	return (
-		<>
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				height: "100vh",
+				justifyContent: "space-evenly",
+			}}
+		>
 			<section style={desktopContainer}>
 				<Slider img={SLIDER_PROYECTS[0].img} />
 				<h3 style={{ margin: "10px", fontWeight: 400 }}>
@@ -22,6 +29,6 @@ export function HomeDesktop() {
 				</h3>
 			</section>
 			<FooterDesktop />
-		</>
+		</div>
 	);
 }

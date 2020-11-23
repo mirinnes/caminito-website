@@ -23,6 +23,7 @@ export function PortfolioDesktop({ match }) {
 		width: "100vw",
 		gridTemplateColumns: "33.33% 33.33% 33.34%",
 		gridTemplateRows: "50%",
+		height: "100vh",
 	};
 	return (
 		<div style={styleContainer}>
