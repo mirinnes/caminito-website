@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-	PORTFOLIO_CAROS,
-	PORTFOLIO_BARATOS,
-	PORTFOLIO_BUENOS,
+	PORTFOLIO_GRÁFICO,
+	PORTFOLIO_FOTOGRAFIA,
 } from "../assets/images/dataImages";
 import Header from "../layout/Header/Header";
 import Footer from "../layout/Footer/Footer";
 import OpenButton from "../components/OpenButton/OpenButton";
 import "../layout/Portfolio/Portfolio.scss";
 
-const PORTFOLIOS = [PORTFOLIO_CAROS, PORTFOLIO_BARATOS, PORTFOLIO_BUENOS];
+const PORTFOLIOS = [PORTFOLIO_GRÁFICO, PORTFOLIO_FOTOGRAFIA];
 export const Home = () => {
 	const [renderize, setRenderize] = useState(false);
 
@@ -60,11 +59,11 @@ export const Home = () => {
 										setRenderize(!renderize);
 									}}
 									style={{
-										backgroundImage: `url(${portfolio.proyects[0].images[0]})`,
+										backgroundImage: `url(${portfolio.proyects[0].tapa})`,
 										backgroundRepeat: "no-repeat",
 										backgroundSize: "cover",
 										backgroundPositionX: "center",
-										height: "325px",
+										height: "300px",
 										borderRadius: "15px",
 									}}
 								>
@@ -77,13 +76,33 @@ export const Home = () => {
 								<div key={ind}>
 									{portfolio.proyects.map((proyect, inx) => {
 										return (
-											<Link to={`/proyect/${proyect.id}`}>
-												<img
-													className='portfolioContainer-img'
-													key={`button-${inx}`}
-													src={proyect.images[0]}
-													alt='img-proyect'
-												/>
+											<Link
+												key={`portfolioLink-${inx}`}
+												to={`/proyect/${proyect.id}`}
+											>
+												<div
+													key={`portfolioLinkContainer-${inx}`}
+													className='portfolioLink-container'
+												>
+													<img
+														key={`portfolioLinkImg-${inx}`}
+														className='portfolioContainer-img'
+														src={proyect.tapa}
+														alt='img-proyect'
+													/>
+													<h1
+														key={`portfolioLinkTitle-${inx}`}
+														className='portfolioLink-title'
+													>
+														{proyect.title}
+													</h1>
+													<h2
+														key={`portfolioLinkSubtitle-${inx}`}
+														className='portfolioLink-subtitle'
+													>
+														{proyect.subTitle}
+													</h2>
+												</div>
 											</Link>
 										);
 									})}

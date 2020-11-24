@@ -24,24 +24,44 @@
 	&-img {
 		border-radius: 15px;
 		width: 100%;
-		height: 325px;
 		margin-bottom: 12.6px;
 	}
 	.portfolioContainer-portada {
 		h1,
 		h2 {
 			position: absolute;
-			left: 12%;
+			left: 13%;
 		}
 		h1 {
 			font-size: 25px;
-			bottom: Calc(90% - 75%);
+			bottom: Calc(90% - 70%);
 			font-weight: 700;
 		}
 		h2 {
 			font-size: 20px;
 			font-weight: 400;
-			bottom: Calc(90% - 82%);
+			bottom: Calc(90% - 76%);
+		}
+	}
+}
+.portfolioLink-container {
+	position: relative;
+	color: white;
+	.portfolioLink {
+		&-title,
+		&-subtitle {
+			position: absolute;
+			left: 5.5%;
+		}
+		&-title {
+			font-size: 25px;
+			font-weight: 700;
+			bottom: 15%;
+		}
+		&-subtitle {
+			font-size: 20px;
+			font-weight: 400;
+			bottom: 10%;
 		}
 	}
 }

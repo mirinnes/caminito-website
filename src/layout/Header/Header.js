@@ -6,7 +6,7 @@ import "./Header.scss";
 
 // Icon
 import infoCircle from "../../assets/icons/infoCircle.svg";
-import logoCaminitoEdiciones from "../../assets/icons/logoCaminitoEdiciones.svg";
+import logoCaminitoEdiciones from "../../assets/logo/Logo_Horizontal_short.png";
 
 export default function Header() {
 	const styleMenuLink = { color: "white", fontSize: "15px" };

@@ -2,20 +2,26 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton/BackButton";
 import {
-	PROY_SIAMES,
-	PROY_PERSA,
-	PROY_ANGORA,
-	PROY_RAGDOLL,
-	PROY_SIBERIANO,
+	PROY_CANETA,
+	PROY_SARAVA,
+	PROY_GRAFISMOS,
+	PROY_CIANOTIPIA,
+	PROY_IMERSAO,
+	PROY_SARAVA20,
+	PROY_MINICUADERNOS,
+	PROY_PUNTOINQUIETO,
 } from "../assets/images/dataImages";
 import "../layout/Proyect/Proyect.scss";
 
 const PROYECTS = [
-	PROY_SIAMES,
-	PROY_PERSA,
-	PROY_ANGORA,
-	PROY_RAGDOLL,
-	PROY_SIBERIANO,
+	PROY_CANETA,
+	PROY_SARAVA,
+	PROY_GRAFISMOS,
+	PROY_CIANOTIPIA,
+	PROY_IMERSAO,
+	PROY_SARAVA20,
+	PROY_MINICUADERNOS,
+	PROY_PUNTOINQUIETO,
 ];
 
 export const ProyectDesktop = ({ match }) => {

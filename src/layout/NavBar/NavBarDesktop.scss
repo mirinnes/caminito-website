@@ -1,4 +1,42 @@
-.navBar-Link {
-	text-decoration: none;
-	margin: 10px 0;
+.menuDesktop {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+	width: 15vw;
+	padding: 40px 0px 20px 30px;
+	.menuDesktop-navBarContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.menuDesktop-logo {
+		height: 17vh;
+		width: 7vw;
+		background-size: 180%;
+		background-position-y: center;
+		background-position-x: center;
+		margin-bottom: 30px;
+	}
+	.menuDesktop-navBar {
+		display: flex;
+		flex-direction: column;
+		padding-left: 8px;
+		width: 102%;
+		z-index: 1;
+	}
+	.menuDesktop-insta {
+		width: 30px;
+	}
+	.navBar-Link {
+		text-decoration: none;
+		margin: 6px 0;
+		padding: 6px 0;
+		padding-left: 5px;
+		&:hover {
+			background-color: #a87c50;
+			border-radius: 5px;
+			color: rgba(100%, 100%, 100%, 0.6);
+		}
+	}
 }

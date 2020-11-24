@@ -3,20 +3,26 @@ import { Link } from "react-router-dom";
 import Footer from "../layout/Footer/Footer";
 import BackButton from "../components/BackButton/BackButton";
 import {
-	PROY_SIAMES,
-	PROY_PERSA,
-	PROY_ANGORA,
-	PROY_RAGDOLL,
-	PROY_SIBERIANO,
+	PROY_CANETA,
+	PROY_SARAVA,
+	PROY_GRAFISMOS,
+	PROY_CIANOTIPIA,
+	PROY_IMERSAO,
+	PROY_SARAVA20,
+	PROY_MINICUADERNOS,
+	PROY_PUNTOINQUIETO,
 } from "../assets/images/dataImages";
 import "../layout/Proyect/Proyect.scss";
 
 const PROYECTS = [
-	PROY_SIAMES,
-	PROY_PERSA,
-	PROY_ANGORA,
-	PROY_RAGDOLL,
-	PROY_SIBERIANO,
+	PROY_CANETA,
+	PROY_SARAVA,
+	PROY_GRAFISMOS,
+	PROY_CIANOTIPIA,
+	PROY_IMERSAO,
+	PROY_SARAVA20,
+	PROY_MINICUADERNOS,
+	PROY_PUNTOINQUIETO,
 ];
 
 export const Proyect = ({ match }) => {
@@ -27,17 +33,16 @@ export const Proyect = ({ match }) => {
 	const proyect = PROYECTS.find((item) => {
 		return item.id === Number(match.params.id);
 	});
-	const { images, title, subTitle, description } = proyect;
+	const { images, title, subTitle, description, tapa } = proyect;
 
 	return (
 		<div>
 			<section
 				style={{
-					backgroundImage: `url(${images[0]})`,
+					backgroundImage: `url(${tapa})`,
 					backgroundRepeat: "no-repeat",
-					backgroundSize: "auto 45%",
-					backgroundPosition: "center",
-					backgroundPositionY: "top",
+					backgroundSize: "contain",
+					backgroundPosition: "center 0",
 					position: "relative",
 				}}
 			>
@@ -49,14 +54,14 @@ export const Proyect = ({ match }) => {
 				</Link>
 				<div className='proyect-ventana'></div>
 				<article className='proyect-container'>
-					<h1>Gato {title}</h1>
-					<h3>{subTitle}</h3>
+					<h1 className='proyect-title'>{title}</h1>
+					<h3 className='proyect-subtitle'>{subTitle}</h3>
 					<p>{description}</p>
 					<div style={{ display: "grid", justifyContent: "center" }}>
 						{images.map((img, inx) => {
 							return (
 								<img
-									style={{ maxWidth: "50vw", justifySelf: "center" }}
+									style={{ maxWidth: "85vw", justifySelf: "center" }}
 									key={inx}
 									src={img}
 									alt='img'

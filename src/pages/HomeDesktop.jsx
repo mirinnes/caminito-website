@@ -5,12 +5,13 @@ import FooterDesktop from "../layout/Footer/FooterDesktop";
 
 export function HomeDesktop() {
 	const desktopContainer = {
-		width: "100%",
+		width: "70vw",
 		textAlign: "center",
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
 		flexDirection: "column",
+		marginBottom: "25px",
 	};
 	return (
 		<div
@@ -18,7 +19,8 @@ export function HomeDesktop() {
 				display: "flex",
 				flexDirection: "column",
 				height: "100vh",
-				justifyContent: "space-evenly",
+				marginLeft: "80px",
+				justifyContent: "flex-end",
 			}}
 		>
 			<section style={desktopContainer}>

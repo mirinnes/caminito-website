@@ -4,14 +4,17 @@
 .proyect-container {
 	background-color: #231f20;
 	text-align: left;
-	padding: 20px 15px;
+	padding: 20px 20px;
 	border-radius: 15px;
-	h1,
-	h2,
-	h3 {
+	.proyect-title,
+	.proyect-subtitle {
 		color: white;
+	}
+	.proyect-subtitle {
+		font-weight: 400;
 	}
 	p {
 		color: #a87c50;
+		margin-top: 15px;
 	}
 }
