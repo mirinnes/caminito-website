@@ -65,6 +65,8 @@ export const Home = () => {
 										backgroundPositionX: "center",
 										height: "300px",
 										borderRadius: "15px",
+										boxShadow:
+											"inset 0px -75px 60px -70px rgba(255, 255, 255, 0.575)",
 									}}
 								>
 									<h1>{portfolio.proyects[0].title}</h1>

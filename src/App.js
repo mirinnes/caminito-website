@@ -27,7 +27,7 @@ function App() {
 				<Router>
 					{isDesktop ? (
 						<>
-							<div style={{ display: "flex", alignItems: "center" }}>
+							<div style={{ display: "flex", justifyContent: "space-between" }}>
 								<NavBarDesktop />
 								<Switch>
 									<Route exact path='/' component={HomeDesktop} />

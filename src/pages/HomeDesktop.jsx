@@ -19,7 +19,7 @@ export function HomeDesktop() {
 				display: "flex",
 				flexDirection: "column",
 				height: "100vh",
-				marginLeft: "80px",
+				margin: "0 160px 0 0",
 				justifyContent: "flex-end",
 			}}
 		>

@@ -1,5 +1,10 @@
 .footer-desktop-container {
-	height: 10vh;
 	display: flex;
+	margin-bottom: 30px;
 	justify-content: space-between;
+	h3 {
+		font-size: 15px;
+		margin: 10px;
+		font-weight: 400;
+	}
 }

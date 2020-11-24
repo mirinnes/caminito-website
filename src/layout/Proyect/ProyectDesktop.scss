@@ -1,0 +1,51 @@
+.proyectDesktop {
+	&-container {
+		background-repeat: no-repeat;
+		height: 100vh;
+		background-size: cover;
+		border-radius: 15px;
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		width: 82vw;
+		background-position-y: center;
+	}
+	&-title,
+	&-subtitle {
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+	&-title {
+		font-size: 25px;
+	}
+	&-subtitle {
+		font-size: 15px;
+	}
+	&-text {
+		color: #a87c50;
+		margin-top: 15px;
+		margin-bottom: 38px;
+	}
+	&-imagesContainer {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 50% 50%;
+		.proyectDesktop-img {
+			max-width: 100%;
+			justify-self: center;
+		}
+	}
+	&-BackButtonLink {
+		position: absolute;
+		left: 25px;
+		top: 25px;
+	}
+	&-contentContainer {
+		background-color: #231f20;
+		color: white;
+		border-radius: 15px;
+		padding: 20px 40px;
+		position: absolute;
+		top: 60%;
+	}
+}

@@ -21,7 +21,7 @@ export function PortfolioDesktop({ match }) {
 				return (
 					<Link
 						style={{
-							backgroundImage: `url(${proyect.images[0]})`,
+							backgroundImage: `url(${proyect.tapa})`,
 							backgroundSize: "cover",
 						}}
 						className={`grid-item-${ind} portfolio-proyect`}
