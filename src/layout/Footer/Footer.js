@@ -10,12 +10,14 @@ export default function Footer() {
 	return (
 		<footer className='main-footer'>
 			<div className='main-footer-backUp'>
-				<button>
+				<button onClick={() => window.scrollTo(0, 0)}>
 					<img className='upArrow' src={upArrow} alt='' />
 				</button>
 			</div>
 			<div className='main-footer-media'>
-				<img className='instaIcon' src={instaIcon} alt='' />
+				<a href='https://www.instagram.com/caminitoediciones/'>
+					<img className='instaIcon' src={instaIcon} alt='' />
+				</a>
 				<p>@ 2020 Caminito Ediciones</p>
 			</div>
 		</footer>

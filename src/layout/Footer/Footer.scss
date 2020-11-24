@@ -35,6 +35,11 @@ $main-black: #231f20;
 			.upArrow {
 				width: 10px;
 			}
+			&:active,
+			&:focus,
+			&:visited {
+				outline: none;
+			}
 		}
 	}
 	.instaIcon {
