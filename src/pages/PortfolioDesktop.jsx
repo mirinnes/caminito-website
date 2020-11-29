@@ -27,7 +27,12 @@ export function PortfolioDesktop({ match }) {
 						className={`grid-item-${ind} portfolio-proyect`}
 						to={`/proyectDesktop/${proyect.id}`}
 					>
-						<h1>{proyect.title}</h1>{" "}
+						<div className='portfolioDesktop-overlay'>
+							<h1>
+								{proyect.title}
+								<p>{proyect.subTitle}</p>
+							</h1>
+						</div>
 					</Link>
 				);
 			})}

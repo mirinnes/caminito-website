@@ -10,6 +10,7 @@ import {
 	PROY_SARAVA20,
 	PROY_MINICUADERNOS,
 	PROY_PUNTOINQUIETO,
+	PROY_AUTORAL,
 } from "../assets/images/dataImages";
 import "../layout/Proyect/ProyectDesktop.scss";
 
@@ -22,6 +23,7 @@ const PROYECTS = [
 	PROY_SARAVA20,
 	PROY_MINICUADERNOS,
 	PROY_PUNTOINQUIETO,
+	PROY_AUTORAL,
 ];
 
 export const ProyectDesktop = ({ match }) => {
@@ -32,20 +34,23 @@ export const ProyectDesktop = ({ match }) => {
 	const proyect = PROYECTS.find((item) => {
 		return item.id === Number(match.params.id);
 	});
-	const { images, title, subTitle, description, tapa } = proyect;
+	const { images, title, subTitle, description, tapa, portfolioId } = proyect;
 
 	return (
 		<div
 			className='proyectDesktop-container'
-			style={{ backgroundImage: `url(${tapa})` }}
+			style={{ backgroundImage: `url(${images[0]})` }}
 		>
-			<Link to={`/`} className='proyectDesktop-BackButtonLink'>
+			<Link
+				to={`/portfolio/${portfolioId}`}
+				className='proyectDesktop-BackButtonLink'
+			>
 				<BackButton />
 			</Link>
 			<article className='proyectDesktop-contentContainer'>
 				<h1 className='proyectDesktop-title'>{title}</h1>
 				<h3 className='proyectDesktop-subtitle'>{subTitle}</h3>
-				<p className='proyectDesktop-text'>{description}</p>
+				<div className='proyectDesktop-text'>{description}</div>
 				<div className='proyectDesktop-imagesContainer'>
 					{images.map((img, inx) => {
 						return (

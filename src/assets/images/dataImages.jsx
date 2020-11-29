@@ -1,8 +1,47 @@
 // Autoral
-// import Auto1 from "./1_Autoral/.png";
-// import Auto2 from "./1_Autoral/.png";
-// import Auto3 from "./1_Autoral/.png";
-// import Auto4 from "./1_Autoral/.png";
+import AutoP from "./1_Autoral/TAPA.png";
+import Auto0 from "./1_Autoral/0.jpg";
+import Auto1 from "./1_Autoral/1.jpg";
+import Auto2 from "./1_Autoral/2.jpg";
+import Auto3 from "./1_Autoral/3.jpg";
+import Auto4 from "./1_Autoral/4.jpg";
+import Auto5 from "./1_Autoral/5.jpg";
+import Auto6 from "./1_Autoral/6.jpg";
+import Auto7 from "./1_Autoral/7.jpg";
+import Auto8 from "./1_Autoral/8.jpg";
+import Auto9 from "./1_Autoral/9.jpg";
+import Auto10 from "./1_Autoral/10.jpg";
+import Auto11 from "./1_Autoral/11.jpg";
+import Auto12 from "./1_Autoral/12.jpg";
+import Auto13 from "./1_Autoral/13.jpg";
+import Auto14 from "./1_Autoral/14.jpg";
+import Auto15 from "./1_Autoral/15.jpg";
+import Auto16 from "./1_Autoral/16.jpg";
+import Auto17 from "./1_Autoral/17.jpg";
+import Auto18 from "./1_Autoral/18.jpg";
+import Auto19 from "./1_Autoral/19.jpg";
+import Auto20 from "./1_Autoral/20.jpg";
+import Auto21 from "./1_Autoral/21.jpg";
+// import Auto22 from "./1_Autoral/22.jpg";
+import Auto23 from "./1_Autoral/23.jpg";
+import Auto24 from "./1_Autoral/24.jpg";
+import Auto25 from "./1_Autoral/25.jpg";
+import Auto26 from "./1_Autoral/26.jpg";
+import Auto27 from "./1_Autoral/27.png";
+import Auto28 from "./1_Autoral/28.jpg";
+import Auto29 from "./1_Autoral/29.jpg";
+import Auto30 from "./1_Autoral/30.jpg";
+import Auto31 from "./1_Autoral/31.png";
+import Auto32 from "./1_Autoral/32.jpg";
+import Auto33 from "./1_Autoral/33.jpg";
+import Auto34 from "./1_Autoral/34.jpg";
+import Auto35 from "./1_Autoral/35.jpg";
+import Auto36 from "./1_Autoral/36.jpg";
+import Auto37 from "./1_Autoral/37.jpg";
+import Auto38 from "./1_Autoral/38.jpg";
+import Auto39 from "./1_Autoral/39.jpg";
+import Auto40 from "./1_Autoral/40.jpg";
+import Auto41 from "./1_Autoral/41.jpg";
 
 // Kit Kaneta de Bambu
 import caneta0 from "./1_KitCanetadeBambu/0.png";
@@ -45,7 +84,7 @@ import grafismos6 from "./2_Grafismos/6.jpg";
 import grafismosP from "./2_Grafismos/TAPA.png";
 
 // Cianotipia
-import cianotipiaP from "./3_Cianotipia/TAPA.jpg";
+import cianotipiaP from "./3_Cianotipia/TAPA.png";
 import cianotipia1 from "./3_Cianotipia/1.jpg";
 import cianotipia2 from "./3_Cianotipia/2.jpg";
 import cianotipia3 from "./3_Cianotipia/3.jpg";
@@ -78,7 +117,7 @@ import imersao20 from "./3_ImersãoSolarAcroyoga/20.jpg";
 import imersao21 from "./3_ImersãoSolarAcroyoga/21.jpg";
 
 // Festival Saravá 2020
-import sarava20P from "./4_FestivalSaravá2020/TAPA.jpg";
+import sarava20P from "./4_FestivalSaravá2020/TAPA.png";
 import sarava200 from "./4_FestivalSaravá2020/0.jpg";
 import sarava201 from "./4_FestivalSaravá2020/1.jpg";
 import sarava202 from "./4_FestivalSaravá2020/2.jpg";
@@ -119,8 +158,9 @@ import puntoinquieto7 from "./5_IdentidadVisualPuntoinquieto/7.png";
 
 // Proyects
 class Proyect {
-	constructor(id, title, subTitle, description, images, tapa) {
+	constructor(id, portfolioId, title, subTitle, description, images, tapa) {
 		this.id = id;
+		this.portfolioId = portfolioId;
 		this.title = title;
 		this.subTitle = subTitle;
 		this.description = description;
@@ -155,7 +195,50 @@ export const SLIDER_PROYECTS = [
 	{ title: "Imersão Solar Acroyoga", portfolio: "Fotografía", img: imersaoP },
 ];
 
-//export const PROY_IMG_AUTORAL = [];
+export const PROY_IMG_AUTORAL = [
+	Auto0,
+	Auto1,
+	Auto2,
+	Auto3,
+	Auto4,
+	Auto5,
+	Auto6,
+	Auto7,
+	Auto8,
+	Auto9,
+	Auto10,
+	Auto11,
+	Auto12,
+	Auto13,
+	Auto14,
+	Auto15,
+	Auto16,
+	Auto17,
+	Auto18,
+	Auto19,
+	Auto20,
+	Auto21,
+	// Auto22,
+	Auto23,
+	Auto24,
+	Auto25,
+	Auto26,
+	Auto27,
+	Auto28,
+	Auto29,
+	Auto30,
+	Auto31,
+	Auto32,
+	Auto33,
+	Auto34,
+	Auto35,
+	Auto36,
+	Auto37,
+	Auto38,
+	Auto39,
+	Auto40,
+	Auto41,
+];
 
 export const PROY_IMG_CANETA = [
 	caneta0,
@@ -263,73 +346,144 @@ export const PROY_IMG_PUNTOINQUIETO = [
 	puntoinquieto7,
 ];
 
-//export const PROY_AUTORAL = {0, "Autoral", "Producción caminito", "Lorem ipsum", PROY_IMG_AUTORAL}
+export const PROY_AUTORAL = new Proyect(
+	0,
+	1,
+	"Autoral",
+	"Sutil imaginario",
+	(
+		<>
+			<p>Serie de fotografías autorales</p>
+			<p>Retratos y experimentaciones</p>
+			<p>Analógico y digital</p>
+		</>
+	),
+	PROY_IMG_AUTORAL,
+	AutoP
+);
 
 export const PROY_CANETA = new Proyect(
 	1,
+	0,
 	"Kit Caneta de Bambu",
 	"Producción caminito",
-	`Compartilhando a experiencia de desenhar utilizando a técnica de nanquim. Rabiscos, tipografias, desenhos, tramas, em miniatura o grande formato.
-	\n Inclui:\n
-	• Caneta de bambu feita a mão.\n
-	• Nanquim preto 5ml.\n
-	• Livrinho dicas de uso.\n
-	Seja livre para criar o seu mundo`,
+	(
+		<>
+			<p>
+				Kit para experimentar el dibujo con la técnica de pluma y tinta china.
+			</p>
+			<ul>
+				Incluye:
+				<li>Caneta de bambu hecha a mano</li>
+				<li>Frasquito de tinta china 5ml</li>
+				<li>Librito de recomendaciones de uso</li>
+			</ul>
+		</>
+	),
 	PROY_IMG_CANETA,
 	canetaP
 );
 export const PROY_SARAVA = new Proyect(
 	2,
+	1,
 	"Festival Saravá 2019",
-	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	"Cobertura fotográfica",
+	(
+		<>
+			<p>Registro fotográfico del Festival Saravá</p>
+			<p>Florianópolis, Brasil. 2019</p>
+		</>
+	),
 	PROY_IMG_SARAVA,
 	saravaP
 );
 export const PROY_GRAFISMOS = new Proyect(
 	3,
+	0,
 	"Grafismos",
 	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	(
+		<>
+			<p>Caligrafías en serie de tarjetas con bambú 10/10, letras dibujadas.</p>
+			<p>Hecho a mano con tinta china y pluma</p>
+			<p>Brasil, 2018</p>
+		</>
+	),
 	PROY_IMG_GRAFISMOS,
 	grafismosP
 );
 export const PROY_CIANOTIPIA = new Proyect(
 	4,
+	0,
 	"Cianotipia",
 	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	(
+		<>
+			<p>Serie de mini cuadernos en pequeño formato: 6x9 cm.</p>
+			<p>
+				En las tapas fotogramas realizados con la técnica de cianotipia,
+				utilizando elementos que fueron recogidos alrededor de mi casa.
+			</p>
+			<p>Hecho a mano</p>
+			<p>Brasil, 2019</p>
+		</>
+	),
 	PROY_IMG_CIANOTIPIA,
 	cianotipiaP
 );
 export const PROY_IMERSAO = new Proyect(
 	5,
+	1,
 	"Imersão Solar Acroyoga",
-	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	"Cobertura fotográfica",
+	(
+		<>
+			<p>
+				Anotadores en pequeño formato hechos a manos, con hojas lisas sin
+				pegamento.
+			</p>
+			<p>En las tapas diferentes fotografías autorales.</p>
+		</>
+	),
 	PROY_IMG_IMERSAO,
 	imersaoP
 );
 export const PROY_SARAVA20 = new Proyect(
 	6,
+	1,
 	"Festival Saravá 2020",
-	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	"Cobertura fotográfica",
+	(
+		<>
+			<p>Registro fotográfico del Festival Saravá</p>
+			<p>Florianópolis, Brasil. 2019</p>
+		</>
+	),
 	PROY_IMG_SARAVA20,
 	sarava20P
 );
 export const PROY_MINICUADERNOS = new Proyect(
 	7,
+	0,
 	"Minicuadernos Fotografía",
 	"Producción caminito",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	(
+		<>
+			<p>
+				Anotadores en pequeño formato hechos a manos, con hojas lisas sin
+				pegamento.
+			</p>
+			<p>En las tapas diferentes fotografías autorales.</p>
+		</>
+	),
 	PROY_IMG_MINICUADERNOS,
 	minicuaderP
 );
 export const PROY_PUNTOINQUIETO = new Proyect(
 	8,
+	0,
 	"Identidad Visual Puntoinquieto",
-	"Producción caminito",
+	"Diseño gráfico",
 	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
 	PROY_IMG_PUNTOINQUIETO,
 	puntoinquietoP
@@ -343,7 +497,7 @@ export const PORTFOLIO_GRÁFICO = new Portfolio(0, "Portfolio Gráfico", [
 	PROY_PUNTOINQUIETO,
 ]);
 export const PORTFOLIO_FOTOGRAFIA = new Portfolio(1, "Fotografía", [
-	//PROY_AUTORAL,
+	PROY_AUTORAL,
 	PROY_SARAVA,
 	PROY_IMERSAO,
 	PROY_SARAVA20,

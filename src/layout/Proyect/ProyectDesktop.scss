@@ -30,6 +30,8 @@
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 50% 50%;
+		// max-width: 900px;
+		// margin: 0 auto;
 		.proyectDesktop-img {
 			max-width: 100%;
 			justify-self: center;
@@ -47,5 +49,6 @@
 		padding: 20px 40px;
 		position: absolute;
 		top: 60%;
+		width: 100%;
 	}
 }

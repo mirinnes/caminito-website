@@ -1,24 +1,44 @@
-.portfolioDesktop-container {
-	padding: 30px 38px;
-	background-color: #231f20;
-	border-radius: 15px;
-	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-template-rows: 50% 50%;
-	height: 100vh;
-	width: 83vw;
+.portfolioDesktop {
+	&-container {
+		padding: 30px 38px;
+		background-color: #231f20;
+		border-radius: 15px;
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+		grid-template-rows: 50% 50%;
+		height: 100vh;
+		width: 83vw;
+	}
+	&-overlay {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		transition: background-color 0.2s linear;
+		&:hover {
+			background-color: #0000005d;
+			h1 {
+				transition: all 0.2s linear;
+				margin-bottom: 5px;
+			}
+		}
+	}
 }
+
 .portfolio-proyect {
-	display: flex;
 	margin: 10px;
 	color: white;
 	text-decoration: none;
-	padding: 20px;
+	overflow: hidden;
 	border-radius: 13px;
 	h1 {
 		align-self: flex-end;
-		font-size: 25px;
+		font-size: 24px;
 		font-weight: 500;
+		p {
+			font-weight: 400;
+			font-size: 20px;
+		}
 	}
 }
 .grid-item-0 {
