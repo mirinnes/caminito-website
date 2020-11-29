@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../layout/Footer/Footer";
 import BackButton from "../components/BackButton/BackButton";
 import {
+	PROY_AUTORAL,
 	PROY_CANETA,
 	PROY_SARAVA,
 	PROY_GRAFISMOS,
@@ -15,6 +16,7 @@ import {
 import "../layout/Proyect/Proyect.scss";
 
 const PROYECTS = [
+	PROY_AUTORAL,
 	PROY_CANETA,
 	PROY_SARAVA,
 	PROY_GRAFISMOS,
