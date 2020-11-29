@@ -34,7 +34,7 @@ export const ProyectDesktop = ({ match }) => {
 	const proyect = PROYECTS.find((item) => {
 		return item.id === Number(match.params.id);
 	});
-	const { images, title, subTitle, description, tapa, portfolioId } = proyect;
+	const { images, title, subTitle, description, portfolioId } = proyect;
 
 	return (
 		<div
