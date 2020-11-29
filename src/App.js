@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DataState from "./context/DataState";
 import { Proyect } from "./pages/Proyect";
@@ -19,6 +19,8 @@ function App() {
 			setIsDesktop(true);
 		}
 	};
+
+	useEffect(() => showDesktop(), []);
 
 	window.addEventListener("resize", showDesktop);
 	return (

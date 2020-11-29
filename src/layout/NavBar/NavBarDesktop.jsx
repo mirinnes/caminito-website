@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoVertical from "../../assets/logo/Logo_Vertical.png";
 import IconInstagram from "../../assets/icons/instagramIcon.svg";
 import "./NavBarDesktop.scss";
@@ -15,15 +15,30 @@ export function NavBarDesktop() {
 					}}
 				></i>
 				<nav className='menuDesktop-navBar'>
-					<Link className='navBar-Link' to='/'>
+					<NavLink
+						exact={true}
+						activeClassName='active'
+						className='navBar-Link'
+						to='/'
+					>
 						Bio
-					</Link>
-					<Link className='navBar-Link' to='/portfolio/0'>
+					</NavLink>
+					<NavLink
+						exact={true}
+						activeClassName='active'
+						className='navBar-Link'
+						to='/portfolio/0'
+					>
 						Portfolio Gráfico
-					</Link>
-					<Link className='navBar-Link' to='/portfolio/1'>
+					</NavLink>
+					<NavLink
+						exact={true}
+						activeClassName='active'
+						className='navBar-Link'
+						to='/portfolio/1'
+					>
 						Fotografía
-					</Link>
+					</NavLink>
 				</nav>
 			</div>
 			<a
