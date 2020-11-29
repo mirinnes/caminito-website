@@ -11,7 +11,7 @@ export function HomeDesktop() {
 		justifyContent: "center",
 		alignItems: "center",
 		flexDirection: "column",
-		marginBottom: "25px",
+		marginBottom: "60px",
 	};
 	return (
 		<div
@@ -19,8 +19,8 @@ export function HomeDesktop() {
 				display: "flex",
 				flexDirection: "column",
 				height: "100vh",
-				margin: "0 160px 0 0",
-				justifyContent: "flex-end",
+				margin: "83px 80px 0px 0px",
+				justifyContent: "center",
 			}}
 		>
 			<section style={desktopContainer}>

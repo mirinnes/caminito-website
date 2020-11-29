@@ -1,12 +1,12 @@
 .slider-container {
 	width: 100%;
-	height: 60vh;
+	height: 55vh;
 	overflow: hidden;
 	position: relative;
 	border-radius: 15px;
 	.slider-img {
 		position: absolute;
-		top: -140px;
 		left: 0;
+		width: 100%;
 	}
 }

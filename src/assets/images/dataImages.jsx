@@ -156,6 +156,12 @@ import puntoinquieto5 from "./5_IdentidadVisualPuntoinquieto/5.png";
 import puntoinquieto6 from "./5_IdentidadVisualPuntoinquieto/6.png";
 import puntoinquieto7 from "./5_IdentidadVisualPuntoinquieto/7.png";
 
+// Slider
+import slider0 from "./0_Slider/S1.png";
+import slider1 from "./0_Slider/S2.png";
+import slider2 from "./0_Slider/S3.png";
+import slider3 from "./0_Slider/S4.png";
+
 // Proyects
 class Proyect {
 	constructor(id, portfolioId, title, subTitle, description, images, tapa) {
@@ -185,14 +191,10 @@ class Portfolio {
 
 // Slider @HomeDesktop
 export const SLIDER_PROYECTS = [
-	{ title: "Kaneta de Bambu", portfolio: "Portfolio gráfico", img: canetaP },
-	{
-		title: "Festival Saravá 2020",
-		portfolio: "Portfolio Fotografía",
-		img: sarava20P,
-	},
-	{ title: "Cianotipia", portfolio: "Portfolio gráfico", img: cianotipiaP },
-	{ title: "Imersão Solar Acroyoga", portfolio: "Fotografía", img: imersaoP },
+	{ title: "Caneta de Bambu", portfolio: "Portfolio gráfico", img: slider0 },
+	{ title: "Autoral", portfolio: "Fotografía", img: slider1 },
+	{ title: "Grafismos", portfolio: "Portfolio gráfico", img: slider2 },
+	{ title: "Autoral", portfolio: "Fotografía", img: slider3 },
 ];
 
 export const PROY_IMG_AUTORAL = [
