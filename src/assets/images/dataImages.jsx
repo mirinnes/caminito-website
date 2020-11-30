@@ -492,7 +492,16 @@ export const PROY_PUNTOINQUIETO = new Proyect(
 	0,
 	"Identidad Visual Puntoinquieto",
 	"Diseño gráfico",
-	`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu neque, vehicula ultricies placerat non, pellentesque a arcu. In hendrerit feugiat mi, eleifend pretium sem consequat aliquam. Morbi eget posuere erat. Maecenas quis pulvinar quam, sit amet sagittis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut suscipit odio sed pharetra venenatis. Donec auctor sodales lacus, eu dapibus ex auctor sit amet. Maecenas in tempus lectus. Quisque eros risus, aliquet sit amet condimentum sed, lacinia sed nisi. Etiam ultrices elit lacus, vitae pellentesque orci volutpat ut. Aenean vehicula dignissim ipsum, sed condimentum nisi sollicitudin at. Suspendisse sit amet lacus odio.`,
+	(
+		<>
+			<p>
+				Diseño de identidad visual para el Taller de arte Puntoinquieto de
+				Rosario, diseño gráfico para piezas de divulgación e ilustraciones
+				creadas con la técnica de collage digital.
+			</p>
+			<p>Rosario, Argentina 2020</p>
+		</>
+	),
 	PROY_IMG_PUNTOINQUIETO,
 	puntoinquietoP
 );
