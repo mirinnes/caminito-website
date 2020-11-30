@@ -1,12 +1,95 @@
 .slider-container {
-	width: 100%;
-	height: 55vh;
-	overflow: hidden;
-	position: relative;
-	border-radius: 15px;
-	.slider-img {
+	.slider-footer {
+		margin: 10px;
+		font-weight: 400;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.arrow {
+		width: 20px;
 		position: absolute;
-		left: 0;
-		width: 100%;
+		&.first {
+			right: 0;
+			animation-name: vanishFirst;
+		}
+		&.second {
+			animation-name: vanishSecond;
+			right: 15px;
+		}
+		&.third {
+			animation-name: vanishThird;
+			right: 30px;
+		}
+		animation-iteration-count: infinite;
+		animation-duration: 4s;
+		&.left {
+			&.first {
+				left: 0;
+			}
+			&.second {
+				left: 15px;
+			}
+			&.third {
+				left: 30px;
+			}
+		}
+		&.right {
+			transform: rotate(180deg);
+			&.first {
+				right: 0;
+			}
+			&.second {
+				right: 15px;
+			}
+			&.third {
+				right: 30px;
+			}
+		}
+	}
+}
+
+/* The animation code */
+@keyframes vanishFirst {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 1;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes vanishSecond {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes vanishThird {
+	0% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	0% {
+		opacity: 0;
 	}
 }

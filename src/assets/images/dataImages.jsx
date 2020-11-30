@@ -144,6 +144,9 @@ import minicuader1 from "./4_MinicuadernoFotografia/1.jpg";
 import minicuader2 from "./4_MinicuadernoFotografia/2.jpg";
 import minicuader3 from "./4_MinicuadernoFotografia/3.jpg";
 import minicuader4 from "./4_MinicuadernoFotografia/4.jpg";
+import minicuader5 from "./4_MinicuadernoFotografia/5.jpg";
+import minicuader6 from "./4_MinicuadernoFotografia/6.jpg";
+import minicuader7 from "./4_MinicuadernoFotografia/7.jpg";
 
 // Identidad Visual Puntoinquieto
 import puntoinquietoP from "./5_IdentidadVisualPuntoinquieto/TAPA.png";
@@ -336,6 +339,9 @@ export const PROY_IMG_MINICUADERNOS = [
 	minicuader2,
 	minicuader3,
 	minicuader4,
+	minicuader5,
+	minicuader6,
+	minicuader7,
 ];
 export const PROY_IMG_PUNTOINQUIETO = [
 	puntoinquieto0,

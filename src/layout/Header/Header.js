@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import DotsMenu from "../../components/DotsMenu/DotsMenu";
+import { NavLink } from "react-router-dom";
+
 import CloseButton from "../../components/CloseButton/CloseButton";
-import { HashLink } from "react-router-hash-link";
 import RedCircle from "../../components/RedCircle/RedCircle";
 import "./Header.scss";
 
@@ -18,7 +19,7 @@ export default function Header() {
 				<div className={`menu-container ${displayMenu ? "isDisplayed" : ""}`}>
 					<CloseButton onClick={onClickDotsMenu} />
 					<nav className='menu-title'>
-						<HashLink
+						<NavLink
 							smooth
 							onClick={onClickDotsMenu}
 							to='/#portfolio1'
@@ -26,8 +27,8 @@ export default function Header() {
 							style={styleMenuLink}
 						>
 							Home
-						</HashLink>
-						<HashLink
+						</NavLink>
+						<NavLink
 							smooth
 							onClick={onClickDotsMenu}
 							to='/#portfolio1'
@@ -35,8 +36,8 @@ export default function Header() {
 							style={styleMenuLink}
 						>
 							Portfolio Gráfico
-						</HashLink>
-						<HashLink
+						</NavLink>
+						<NavLink
 							smooth
 							onClick={onClickDotsMenu}
 							to='/#portfolio2'
@@ -44,8 +45,8 @@ export default function Header() {
 							style={styleMenuLink}
 						>
 							Fotografía
-						</HashLink>
-						<HashLink
+						</NavLink>
+						<NavLink
 							smooth
 							onClick={onClickDotsMenu}
 							to='/#portfolio3'
@@ -53,8 +54,8 @@ export default function Header() {
 							style={styleMenuLink}
 						>
 							Audiovisual
-						</HashLink>
-						<HashLink
+						</NavLink>
+						<NavLink
 							smooth
 							onClick={onClickDotsMenu}
 							to='/#portfolio3'
@@ -62,7 +63,7 @@ export default function Header() {
 							style={styleMenuLink}
 						>
 							Contacto
-						</HashLink>
+						</NavLink>
 					</nav>
 				</div>
 			</div>
