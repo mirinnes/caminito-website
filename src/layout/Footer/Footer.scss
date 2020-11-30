@@ -7,9 +7,31 @@ $main-black: #231f20;
 	background-color: #fff;
 	margin-top: 75px;
 	text-align: center;
-	z-index: 1;
+	z-index: 0;
 	height: 60px;
+	&.inProyect {
+		position: relative;
+		text-align: center;
+		z-index: 0;
+		margin-top: 45px;
+		height: 135px;
+		background-color: #8a5e3c;
+	}
 	.main-footer-backUp {
+		&.inProyect {
+			position: absolute;
+			text-align: -webkit-center;
+			padding-top: 17px;
+			border-radius: 0 0 15px 15px;
+			box-sizing: border-box;
+			left: 0;
+			bottom: 115px;
+			width: 100vw;
+			height: 85px;
+			max-width: 100%;
+			font-size: 25px;
+			background-color: #231f20;
+		}
 		position: absolute;
 		text-align: -webkit-center;
 		padding-top: 17px;
@@ -18,12 +40,12 @@ $main-black: #231f20;
 		left: 0;
 		bottom: 80px;
 		width: 100vw;
-		height: 70px;
+		height: 85px;
 		max-width: 100%;
 		font-size: 25px;
 		background-color: #8a5e3c;
 		button {
-			background-color: $main-black;
+			background-color: red;
 			border-radius: 50px;
 			border: none;
 			width: 30px;
@@ -32,8 +54,9 @@ $main-black: #231f20;
 			align-items: center;
 			justify-content: center;
 			display: flex;
+			transition: background-color 0.2s linear;
 			.upArrow {
-				width: 10px;
+				width: 9px;
 			}
 			&:active,
 			&:focus,
@@ -42,11 +65,14 @@ $main-black: #231f20;
 			}
 		}
 	}
+	.main-footer-media {
+		padding-top: 20px;
+		padding-bottom: 5px;
+		&.inProyect {
+			padding-top: 56px;
+		}
+	}
 	.instaIcon {
 		width: 20px;
-	}
-	.instaIcon,
-	p {
-		margin-bottom: 10px;
 	}
 }

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import DotsMenu from "../../components/DotsMenu/DotsMenu";
 import CloseButton from "../../components/CloseButton/CloseButton";
 import { HashLink } from "react-router-hash-link";
+import RedCircle from "../../components/RedCircle/RedCircle";
 import "./Header.scss";
 
 // Icon
-import infoCircle from "../../assets/icons/infoCircle.svg";
 import logoCaminitoEdiciones from "../../assets/logo/Logo_Horizontal_short.png";
 
 export default function Header() {
@@ -75,7 +75,7 @@ export default function Header() {
 					src={logoCaminitoEdiciones}
 					alt=''
 				/>
-				<img className='infoCircle' src={infoCircle} alt='' />
+				<RedCircle size='small' />
 			</header>
 		</>
 	);

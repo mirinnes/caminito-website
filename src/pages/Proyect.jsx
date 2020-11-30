@@ -35,13 +35,13 @@ export const Proyect = ({ match }) => {
 	const proyect = PROYECTS.find((item) => {
 		return item.id === Number(match.params.id);
 	});
-	const { images, title, subTitle, description, tapa } = proyect;
+	const { images, title, subTitle, description } = proyect;
 
 	return (
 		<div>
 			<section
 				style={{
-					backgroundImage: `url(${tapa})`,
+					backgroundImage: `url(${images[0]})`,
 					backgroundRepeat: "no-repeat",
 					backgroundSize: "contain",
 					backgroundPosition: "center 0",
@@ -59,11 +59,22 @@ export const Proyect = ({ match }) => {
 					<h1 className='proyect-title'>{title}</h1>
 					<h3 className='proyect-subtitle'>{subTitle}</h3>
 					<p>{description}</p>
-					<div style={{ display: "grid", justifyContent: "center" }}>
+					<div
+						style={{
+							display: "grid",
+							justifyContent: "center",
+							paddingBottom: "10px",
+							paddingTop: "25px",
+						}}
+					>
 						{images.map((img, inx) => {
 							return (
 								<img
-									style={{ maxWidth: "85vw", justifySelf: "center" }}
+									style={{
+										maxWidth: "85vw",
+										justifySelf: "center",
+										marginBottom: "15px",
+									}}
 									key={inx}
 									src={img}
 									alt='img'
@@ -73,7 +84,7 @@ export const Proyect = ({ match }) => {
 					</div>
 				</article>
 			</section>
-			<Footer />
+			<Footer inProyect='inProyect' />
 		</div>
 	);
 };
