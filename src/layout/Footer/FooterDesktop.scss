@@ -1,6 +1,9 @@
 .footer-desktop-container {
 	display: flex;
 	justify-content: space-between;
+	bottom: 31px;
+	position: absolute;
+	width: 70vw;
 	h3 {
 		font-size: 15px;
 		margin: 10px;

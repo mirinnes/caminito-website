@@ -29,6 +29,13 @@
 		position: fixed;
 		bottom: 4%;
 		width: 30px;
+		&-img {
+			transition: filter 0.2s ease;
+			&:hover {
+				transition: filter 0.2s ease;
+				filter: invert(1);
+			}
+		}
 	}
 	.navBar-Link {
 		text-decoration: none;

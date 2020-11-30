@@ -45,7 +45,11 @@ export function NavBarDesktop() {
 				href='https://www.instagram.com/caminitoediciones/'
 				className='menuDesktop-insta'
 			>
-				<img src={IconInstagram} alt='insta-icon' />
+				<img
+					className='menuDesktop-insta-img'
+					src={IconInstagram}
+					alt='insta-icon'
+				/>
 			</a>
 		</div>
 	);
