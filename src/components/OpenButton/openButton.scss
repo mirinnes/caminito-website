@@ -12,18 +12,17 @@
 
 	&-img {
 		width: 90%;
-		height: 100%;
+		height: 90%;
 		transition: all 0.3s ease;
 		&.expanded {
-			height: 75%;
 			filter: invert(1);
 			transform: rotate(90deg);
 			transition: all 0.3s ease;
 		}
 	}
 	&.expanded {
+		padding: 2px 2px 2px 2px;
 		transition: all 0.3s ease;
-		padding: 4px 2px 0px 3px;
 		border: none;
 		background-color: white;
 	}
